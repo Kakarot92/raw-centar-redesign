@@ -14,54 +14,101 @@
 </head>
 <body>
 
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <p class="pre-brand">RAW <em>CENTAR</em></p>
+  <p class="pre-num"><span id="preNum">0</span>%</p>
+  <div class="pre-bar"><i id="preBar"></i></div>
+</div>
+<noscript><style>.preloader{display:none}</style></noscript>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- ============ FRAME ============ -->
+<div class="frame" aria-hidden="true">
+  <i class="fl"></i><i class="fr"></i>
+  <span class="f-bl">Niš — 43.32°N · 21.89°E</span>
+  <span class="f-br">RAW ©2026</span>
+</div>
+
 <div class="grain" aria-hidden="true"></div>
 <div class="vignette" aria-hidden="true"></div>
 
+<!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <a class="logo" href="#pocetna">
-    <img src="https://raw-centar.lovable.app/assets/raw-badge-Co78kHZj.png" alt="RAW" width="34" height="34">
+    <img src="https://raw-centar.lovable.app/assets/raw-badge-Co78kHZj.png" alt="RAW" width="32" height="32">
     <span>RAW <em>CENTAR</em></span>
   </a>
-  <nav class="nav-links">
-    <a href="#pocetna">Početna</a>
-    <a href="#proces">Proces</a>
-    <a href="#usluge">Usluge</a>
-    <a href="#rezultati">Rezultati</a>
-    <a href="#tim">Tim</a>
-    <a href="#blog">Blog</a>
-    <a href="#kontakt">Kontakt</a>
+  <div class="nav-right">
     <a class="btn btn-volt btn-nav" href="viber://chat?number=%2B381637572524">Konsultacije</a>
-  </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuOverlay">
+      <span class="mb-label">Meni</span>
+      <span class="mb-icon"><i></i><i></i></span>
+    </button>
+  </div>
 </header>
 
-<!-- ============ HERO : put napretka ============ -->
+<div class="menu-overlay" id="menuOverlay">
+  <nav class="menu-links">
+    <a href="#pocetna"><i>01</i>Početna</a>
+    <a href="#proces"><i>02</i>Proces</a>
+    <a href="#usluge"><i>03</i>Usluge</a>
+    <a href="#rezultati"><i>04</i>Rezultati</a>
+    <a href="#tim"><i>05</i>Tim</a>
+    <a href="#blog"><i>06</i>Blog</a>
+    <a href="#kontakt"><i>07</i>Kontakt</a>
+  </nav>
+  <div class="menu-meta">
+    <p>Doktora Petra Vučinića 5, 18000 Niš</p>
+    <a href="tel:+381637572524">+381 63 757 2524</a>
+    <a href="https://www.instagram.com/raw_trening_centar/" target="_blank" rel="noopener">@raw_trening_centar</a>
+    <a class="btn btn-volt" href="viber://chat?number=%2B381637572524">Zakaži konsultacije</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
 <section class="hero" id="pocetna" aria-label="RAW Centar za Trening i Zdravlje">
-  <canvas id="chart" aria-hidden="true"></canvas>
-  <div class="wrap hero-inner">
-    <div class="hero-copy" id="heroCopy">
-      <p class="eyebrow rise d1">Niš · Centar za Trening i Zdravlje</p>
-      <h1 class="hero-title rise d2">RAW Centar<br><em>za Trening</em><br>i Zdravlje</h1>
-      <p class="hero-sub rise d3">Za ljude koji žele da budu snažniji, zdraviji i stabilniji – fizički i mentalno.</p>
-      <div class="hero-cta rise d4">
-        <a class="btn btn-volt" href="viber://chat?number=%2B381637572524">Zakaži konsultacije <span class="arr">→</span></a>
-        <a class="hero-tel" href="tel:+381637572524">ili pozovi <b>+381 63 757 2524</b></a>
-      </div>
+  <p class="hero-eyebrow lm"><span class="lm-in">Niš · Centar za Trening i Zdravlje</span></p>
+  <h1 class="hero-type">
+    <span class="hline lm"><span class="lm-in">RAW Centar</span></span>
+    <span class="hline volt lm"><span class="lm-in">za Trening</span></span>
+    <span class="hline ghost lm"><span class="lm-in">i Zdravlje</span></span>
+  </h1>
+  <div class="hero-meta">
+    <p class="hm-sub">Za ljude koji žele da budu snažniji, zdraviji i stabilniji – fizički i mentalno.</p>
+    <div class="hm-cta">
+      <a class="btn btn-volt" href="viber://chat?number=%2B381637572524">Zakaži konsultacije <span class="arr">→</span></a>
+      <a class="hero-tel" href="tel:+381637572524">ili pozovi <b>+381 63 757 2524</b></a>
     </div>
+    <b class="hm-plus" aria-hidden="true">+1%</b>
   </div>
   <div class="hero-hint" id="heroHint">Scroll</div>
 </section>
 
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>RAW · Red · Disciplina · <em>Za 1% bolji nego juče</em> · </span>
+    <span>RAW · Red · Disciplina · <em>Za 1% bolji nego juče</em> · </span>
+    <span>RAW · Red · Disciplina · <em>Za 1% bolji nego juče</em> · </span>
+  </div>
+</div>
+
 <!-- ============ INTRO ============ -->
 <section class="intro">
+  <div class="wrap sec-meta"><span>Intro</span><span>RAW — Niš</span></div>
   <div class="wrap intro-grid">
-    <p class="reveal lead">Kroz jasan sistem treninga, strukturu i stručnu podršku. <em>Bez improvizacije.</em></p>
+    <p class="lead reveal">Kroz jasan sistem treninga, strukturu i stručnu podršku. <em>Bez improvizacije.</em></p>
     <p class="reveal">Ne možemo da vam pokažemo pravi put dok ne znamo gde se trenutno nalazite. Zato vas prvo saslušamo, upoznamo vaše stanje, ciljeve i ograničenja. Nakon toga postavljamo jasan pravac i vodimo vas kroz proces – korak po korak, tempom koji odgovara vama.</p>
   </div>
 </section>
 
-<!-- ============ COUNTERS ============ -->
-<section class="results-strip" aria-label="Iskustvo">
-  <div class="wrap strip-grid">
+<!-- ============ BROJEVI ============ -->
+<section class="brojevi" aria-label="Iskustvo">
+  <div class="stat-grid">
     <div class="stat reveal">
       <b><span class="count" data-target="20">0</span>+</b>
       <span>godina iskustva</span>
@@ -93,12 +140,10 @@
 
 <!-- ============ ZA KOGA JE RAW ============ -->
 <section class="forwho">
+  <div class="wrap sec-meta"><span>01</span><span>Za koga je RAW</span></div>
   <div class="wrap">
-    <div class="reveal">
-      <p class="eyebrow">Za koga je RAW</p>
-      <h2>Da li je RAW<br><em>za vas?</em></h2>
-    </div>
-    <div class="who-grid">
+    <h2 class="reveal">Da li je RAW <em>za vas?</em></h2>
+    <div class="who-grid" data-stagger>
       <div class="who-col no reveal">
         <h3>RAW nije za vas ako:</h3>
         <ul>
@@ -125,104 +170,107 @@
   </div>
 </section>
 
-<!-- ============ PROCES ============ -->
+<!-- ============ PROCES : horizontalni pin ============ -->
 <section class="process" id="proces">
-  <div class="wrap">
-    <div class="reveal">
-      <p class="eyebrow">Proces</p>
-      <h2>Kako počinje<br>saradnja <em>u RAW-u?</em></h2>
-    </div>
-    <div class="proc-grid">
-      <article class="proc-step reveal">
-        <span class="num">01</span>
+  <div class="proc-pin" id="procPin">
+    <div class="proc-track" id="procTrack">
+      <div class="proc-panel proc-intro">
+        <div class="sec-meta"><span>02</span><span>Proces</span></div>
+        <h2>Kako počinje<br>saradnja <em>u&nbsp;RAW&#8209;u?</em></h2>
+        <p class="proc-punch">Ovo nas izdvaja od ostalih. <em>Ne radimo napamet.</em></p>
+        <p class="proc-drag" aria-hidden="true">Skroluj →</p>
+      </div>
+      <article class="proc-panel">
+        <span class="num" aria-hidden="true">01</span>
         <span class="faza">Faza 1</span>
         <h3>Konsultacije</h3>
         <p>Upoznajemo vas, vaše ciljeve, trenutno stanje, iskustvo i ograničenja. Na osnovu toga dobijate iskreno mišljenje da li možemo da vam pomognemo i šta je potrebno da bi saradnja bila uspešna.</p>
       </article>
-      <article class="proc-step reveal">
-        <span class="num">02</span>
+      <article class="proc-panel">
+        <span class="num" aria-hidden="true">02</span>
         <span class="faza">Faza 2</span>
         <h3>Testiranje</h3>
         <p>Procena vaše fizičke forme je jedan od bitnijih koraka. Na osnovu toga pravimo plan i program koji treba da bude podešen tako da je prilagođen vašim potrebama.</p>
       </article>
-      <article class="proc-step reveal">
-        <span class="num">03</span>
+      <article class="proc-panel">
+        <span class="num" aria-hidden="true">03</span>
         <span class="faza">Faza 3</span>
         <h3>Kreiranje plana</h3>
         <p>Na osnovu svega toga predlažemo koji oblik rada ima najviše smisla za vas.</p>
       </article>
-      <article class="proc-step reveal">
-        <span class="num">04</span>
+      <article class="proc-panel">
+        <span class="num" aria-hidden="true">04</span>
         <span class="faza">Faza 4</span>
         <h3>Trening i praćenje</h3>
         <p>Trenirate po našem sistemu, pratimo sve i zapisujemo, analiziramo, prilagođavamo, korigujemo.</p>
       </article>
     </div>
-    <p class="proc-punch reveal">Ovo nas izdvaja od ostalih. <em>Ne radimo napamet.</em></p>
   </div>
 </section>
 
-<!-- ============ USLUGE ============ -->
+<!-- ============ USLUGE : sticky stack ============ -->
 <section class="services" id="usluge">
+  <div class="wrap sec-meta"><span>03</span><span>Usluge</span></div>
   <div class="wrap">
-    <div class="reveal">
-      <p class="eyebrow">Usluge</p>
-      <h2>Načini rada<br><em>u RAW-u</em></h2>
-    </div>
-    <div class="serv-grid">
-      <article class="serv-card reveal">
-        <div class="serv-bar"></div>
-        <div class="serv-visual sv-test"></div>
-        <div class="serv-body">
-          <h3>Testiranje i procena stanja</h3>
-          <p>Prvi ozbiljan korak pre nego što se napravi plan treninga.</p>
-        </div>
-      </article>
-      <article class="serv-card reveal">
-        <div class="serv-bar"></div>
-        <div class="serv-visual sv-group"></div>
-        <div class="serv-body">
-          <h3>Small Group trening</h3>
-          <p>Rad u malim grupama, uz individualni pristup, korekcije i praćenje.</p>
-        </div>
-      </article>
-      <article class="serv-card reveal">
-        <div class="serv-bar"></div>
-        <div class="serv-visual sv-pt"></div>
-        <div class="serv-body">
-          <h3>Personalni trening 1:1</h3>
-          <p>Za ljude kojima je potrebna potpuna pažnja, specifičan cilj ili ozbiljniji zdravstveni kontekst.</p>
-        </div>
-      </article>
-    </div>
-    <p class="swipe-hint">Prevuci →</p>
-    <div class="serv-cta reveal">
-      <a class="btn btn-volt" href="viber://chat?number=%2B381637572524">Proveri koji program je za tebe <span class="arr">→</span></a>
-    </div>
+    <h2 class="reveal">Načini rada <em>u&nbsp;RAW&#8209;u</em></h2>
+  </div>
+  <div class="wrap stack">
+    <article class="stack-card" style="--i:0">
+      <div class="sc-body">
+        <span class="sc-num" aria-hidden="true">S.01</span>
+        <h3>Testiranje i procena stanja</h3>
+        <p>Prvi ozbiljan korak pre nego što se napravi plan treninga.</p>
+        <span class="serv-arrow" aria-hidden="true">→</span>
+      </div>
+      <div class="sc-visual sv-test"></div>
+    </article>
+    <article class="stack-card" style="--i:1">
+      <div class="sc-body">
+        <span class="sc-num" aria-hidden="true">S.02</span>
+        <h3>Small Group trening</h3>
+        <p>Rad u malim grupama, uz individualni pristup, korekcije i praćenje.</p>
+        <span class="serv-arrow" aria-hidden="true">→</span>
+      </div>
+      <div class="sc-visual sv-group"></div>
+    </article>
+    <article class="stack-card" style="--i:2">
+      <div class="sc-body">
+        <span class="sc-num" aria-hidden="true">S.03</span>
+        <h3>Personalni trening 1:1</h3>
+        <p>Za ljude kojima je potrebna potpuna pažnja, specifičan cilj ili ozbiljniji zdravstveni kontekst.</p>
+        <span class="serv-arrow" aria-hidden="true">→</span>
+      </div>
+      <div class="sc-visual sv-pt"></div>
+    </article>
+  </div>
+  <div class="wrap serv-cta reveal">
+    <a class="btn btn-volt" href="viber://chat?number=%2B381637572524">Proveri koji program je za tebe <span class="arr">→</span></a>
   </div>
 </section>
 
 <!-- ============ PROBLEMI ============ -->
 <section class="problems">
+  <div class="wrap sec-meta"><span>04</span><span>Problemi koje rešavamo</span></div>
   <div class="wrap">
-    <div class="reveal">
-      <p class="eyebrow">Problemi koje rešavamo</p>
-      <h2>Za šta ljudi<br><em>najčešće dolaze</em></h2>
-    </div>
-    <div class="prob-grid">
+    <h2 class="reveal">Za šta ljudi <em>najčešće dolaze</em></h2>
+    <div class="prob-list" data-stagger>
       <article class="prob reveal">
+        <span class="prob-num" aria-hidden="true">01</span>
         <h3>Bol u leđima</h3>
         <p>Nije dovoljno samo istezanje. Potrebno je da uskladite disanje sa kontrolom trupa i ostatka tela.</p>
       </article>
       <article class="prob reveal">
+        <span class="prob-num" aria-hidden="true">02</span>
         <h3>Mršavljenje</h3>
         <p>Ne tražimo savršenstvo. Gradimo sistem navika, treninga i kontrole.</p>
       </article>
       <article class="prob reveal">
+        <span class="prob-num" aria-hidden="true">03</span>
         <h3>Povratak treningu (sebi)</h3>
         <p>Za ljude koji dugo nisu trenirali, osećaju da su se udaljili od sebe i žele siguran povratak uz stručnu podršku, strukturu i tempo koji njihovo telo može da prati.</p>
       </article>
       <article class="prob reveal">
+        <span class="prob-num" aria-hidden="true">04</span>
         <h3>Zdravlje i funkcionalnost</h3>
         <p>Cilj nije samo izgled. Cilj je telo koje vas bolje služi.</p>
       </article>
@@ -232,32 +280,30 @@
 
 <!-- ============ REZULTATI ============ -->
 <section class="results" id="rezultati">
+  <div class="wrap sec-meta"><span>05</span><span>Rezultati</span></div>
   <div class="wrap">
-    <div class="reveal">
-      <p class="eyebrow">Rezultati</p>
-      <h2>Rezultati koji govore<br><em>umesto nas.</em></h2>
-    </div>
+    <h2 class="reveal">Rezultati koji govore <em>umesto nas.</em></h2>
 
-    <div class="gallery">
-      <figure class="reveal">
-        <img src="https://raw-centar.lovable.app/assets/gallery-1-BHqd1WI9.jpg" alt="rad sa klijentima" loading="lazy">
+    <div class="gallery" data-stagger>
+      <figure class="reveal g-a">
+        <div class="img-reveal"><img src="https://raw-centar.lovable.app/assets/gallery-1-BHqd1WI9.jpg" alt="rad sa klijentima" loading="lazy"></div>
         <figcaption>rad sa klijentima</figcaption>
       </figure>
-      <figure class="reveal">
-        <img src="https://raw-centar.lovable.app/assets/gallery-3-CC6RxVCs.jpg" alt="slika prostora" loading="lazy">
+      <figure class="reveal g-b">
+        <div class="img-reveal"><img src="https://raw-centar.lovable.app/assets/gallery-3-CC6RxVCs.jpg" alt="slika prostora" loading="lazy"></div>
         <figcaption>slika prostora</figcaption>
       </figure>
-      <figure class="reveal">
-        <img src="https://raw-centar.lovable.app/assets/gallery-2-DCCz2um2.jpg" alt="rad sa klijentima" loading="lazy">
+      <figure class="reveal g-c">
+        <div class="img-reveal"><img src="https://raw-centar.lovable.app/assets/gallery-2-DCCz2um2.jpg" alt="rad sa klijentima" loading="lazy"></div>
         <figcaption>rad sa klijentima</figcaption>
       </figure>
-      <figure class="reveal">
-        <img src="https://raw-centar.lovable.app/assets/gallery-4-BPkt5wcu.jpg" alt="small group trening" loading="lazy">
+      <figure class="reveal g-d">
+        <div class="img-reveal"><img src="https://raw-centar.lovable.app/assets/gallery-4-BPkt5wcu.jpg" alt="small group trening" loading="lazy"></div>
         <figcaption>small group trening</figcaption>
       </figure>
     </div>
 
-    <div class="res-grid">
+    <div class="res-grid" data-stagger>
       <article class="res-card reveal">
         <span class="res-tag">Klijent</span>
         <span class="res-name">Ilija</span>
@@ -278,7 +324,7 @@
       </article>
     </div>
 
-    <div class="quotes">
+    <div class="quotes" data-stagger>
       <blockquote class="reveal">
         <p>Prvi put imam osećaj da neko zaista prati moj napredak, a ne da samo brojim ponavljanja. Bol u leđima je skoro nestao.</p>
         <cite><span class="ini">MP</span>Marko P.</cite>
@@ -301,39 +347,34 @@
 
 <!-- ============ TIM ============ -->
 <section class="team" id="tim">
+  <div class="wrap sec-meta"><span>06</span><span>Tim</span></div>
   <div class="wrap">
-    <div class="reveal">
-      <p class="eyebrow">Tim</p>
-      <h2>Ko vodi<br><em>proces?</em></h2>
-      <p class="sub">Ljudi ne kupuju samo trening. Kupuju poverenje.</p>
-    </div>
-    <div class="team-grid">
+    <h2 class="reveal">Ko vodi <em>proces?</em></h2>
+    <p class="sub reveal">Ljudi ne kupuju samo trening. Kupuju poverenje.</p>
+    <div class="team-list" data-stagger>
       <article class="member reveal">
-        <div class="face">
-          <img src="https://raw-centar.lovable.app/assets/raw-badge-Co78kHZj.png" alt="" loading="lazy">
-          <span class="soon">foto uskoro</span>
+        <span class="t-num" aria-hidden="true">T.01</span>
+        <div class="t-main">
+          <h3>Đorđe Nikolić, MSc <span class="soon">foto uskoro</span></h3>
+          <p class="role">Osnivač · Master profesor sporta i kineziterapije</p>
         </div>
-        <h3>Đorđe Nikolić, MSc</h3>
-        <p class="role">Osnivač · Master profesor sporta i kineziterapije</p>
-        <p>Master profesor sporta i kineziterapije, personalni trener i osnivač RAW-a. Više od 20 godina iskustva u treningu i preko 11 godina u radu sa ljudima koji žele da smanje bol, poprave kretanje, smršaju i postanu snažniji.</p>
+        <p class="bio">Master profesor sporta i kineziterapije, personalni trener i osnivač RAW-a. Više od 20 godina iskustva u treningu i preko 11 godina u radu sa ljudima koji žele da smanje bol, poprave kretanje, smršaju i postanu snažniji.</p>
       </article>
       <article class="member reveal">
-        <div class="face">
-          <img src="https://raw-centar.lovable.app/assets/raw-badge-Co78kHZj.png" alt="" loading="lazy">
-          <span class="soon">foto uskoro</span>
+        <span class="t-num" aria-hidden="true">T.02</span>
+        <div class="t-main">
+          <h3>Stefana <span class="soon">foto uskoro</span></h3>
+          <p class="role">Trener · Kineziterapeut</p>
         </div>
-        <h3>Stefana</h3>
-        <p class="role">Trener · Kineziterapeut</p>
-        <p>Kratka biografija — placeholder, zameniti kasnije.</p>
+        <p class="bio">Kratka biografija — placeholder, zameniti kasnije.</p>
       </article>
       <article class="member reveal">
-        <div class="face">
-          <img src="https://raw-centar.lovable.app/assets/raw-badge-Co78kHZj.png" alt="" loading="lazy">
-          <span class="soon">foto uskoro</span>
+        <span class="t-num" aria-hidden="true">T.03</span>
+        <div class="t-main">
+          <h3>Luka <span class="soon">foto uskoro</span></h3>
+          <p class="role">Kondicioni trener</p>
         </div>
-        <h3>Luka</h3>
-        <p class="role">Kondicioni trener</p>
-        <p>Kratka biografija — placeholder, zameniti kasnije.</p>
+        <p class="bio">Kratka biografija — placeholder, zameniti kasnije.</p>
       </article>
     </div>
   </div>
@@ -341,30 +382,28 @@
 
 <!-- ============ FAQ ============ -->
 <section class="faq">
+  <div class="wrap sec-meta"><span>07</span><span>Česta pitanja</span></div>
   <div class="wrap">
-    <div class="reveal">
-      <p class="eyebrow">Česta pitanja</p>
-      <h2>Ono što nas<br><em>najčešće pitaju</em></h2>
-    </div>
+    <h2 class="reveal">Ono što nas <em>najčešće pitaju</em></h2>
     <div class="faq-list reveal" id="faqList">
       <details open>
-        <summary>Da li mogu da treniram ako imam bol u leđima?</summary>
+        <summary><i aria-hidden="true">01</i>Da li mogu da treniram ako imam bol u leđima?</summary>
         <p>Zavisi od stanja. Zato prvo radimo konsultacije i procenu.</p>
       </details>
       <details>
-        <summary>Da li je RAW za početnike?</summary>
+        <summary><i aria-hidden="true">02</i>Da li je RAW za početnike?</summary>
         <p>Da. Sve počinje procenom vašeg trenutnog stanja, pa se plan i tempo prilagođavaju vama — ne obrnuto.</p>
       </details>
       <details>
-        <summary>Da li mogu samo da dođem i treniram sam?</summary>
+        <summary><i aria-hidden="true">03</i>Da li mogu samo da dođem i treniram sam?</summary>
         <p>Ne. RAW nije open gym — svaki trening je vođen, praćen i deo plana koji ima smisla za vas.</p>
       </details>
       <details>
-        <summary>Koliko košta saradnja?</summary>
+        <summary><i aria-hidden="true">04</i>Koliko košta saradnja?</summary>
         <p>Zavisi od oblika rada koji ima najviše smisla za vas. Zato prvo radimo konsultacije — tu dobijate jasan predlog i cenu, bez obaveze.</p>
       </details>
       <details>
-        <summary>Da li moram odmah da se odlučim?</summary>
+        <summary><i aria-hidden="true">05</i>Da li moram odmah da se odlučim?</summary>
         <p>Ne. Konsultacije služe da obe strane vide da li saradnja ima smisla. Odluku donosite svojim tempom.</p>
       </details>
     </div>
@@ -385,9 +424,9 @@
 
 <!-- ============ BLOG ============ -->
 <section class="blog" id="blog">
+  <div class="wrap sec-meta"><span>Blog</span><span>Uskoro</span></div>
   <div class="wrap blog-strip reveal">
     <div>
-      <p class="eyebrow">Blog</p>
       <h3>Blog · Uskoro u ponudi</h3>
       <p>Tekstovi o treningu, oporavku, ishrani i sistemu rada u RAW-u stižu uskoro. Do tada, za sva pitanja i konsultacije dostupni smo na Viberu.</p>
     </div>
@@ -397,10 +436,11 @@
 
 <!-- ============ KONTAKT / FOOTER ============ -->
 <footer id="kontakt">
+  <p class="foot-ghost" aria-hidden="true">RAW Centar</p>
   <div class="wrap foot-grid">
     <div>
       <a class="logo" href="#pocetna">
-        <img src="https://raw-centar.lovable.app/assets/raw-badge-Co78kHZj.png" alt="RAW" width="34" height="34">
+        <img src="https://raw-centar.lovable.app/assets/raw-badge-Co78kHZj.png" alt="RAW" width="32" height="32">
         <span>RAW <em>CENTAR</em></span>
       </a>
       <p class="foot-motto">Za 1% bolji nego juče.</p>
@@ -419,6 +459,8 @@
         <li>Subota 10–16h</li>
         <li>Nedelja neradna</li>
       </ul>
+      <h4>Lokalno vreme</h4>
+      <ul class="contact-list"><li>Niš — <span id="clock">--:--:--</span></li></ul>
     </div>
     <div>
       <h4>Lokacija</h4>
